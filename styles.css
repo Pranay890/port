@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  background-color: #f4f7f6;
+}
+
+header.dashboard-header {
+  background: linear-gradient(to right, #2a9d8f, #264653);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+}
+
+header h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.5em;
+}
+
+nav.horizontal-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+nav.horizontal-navigation button {
+  background: #264653;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  font-size: 1em;
+}
+
+nav.horizontal-navigation button:hover {
+  background: #2a9d8f;
+  transform: scale(1.1);
+}
+
+.dashboard-section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.bg-gradient-light {
+  background: linear-gradient(120deg, #e9f6f5, #d7ecec);
+}
+
+.bg-gradient-dark {
+  background: linear-gradient(120deg, #3e7067, #264653);
+  color: white;
+}
+
+.bg-achievements {
+  background: linear-gradient(120deg, #c3d9f7, #a1c4e6); /* Lighter blue gradient */
+  color: #3e3e3e;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.details-list {
+  list-style-type: none; /* Removed bullets */
+  padding-left: 0;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.details-list li {
+  margin: 10px 0;
+}
+
+/* Contact Section */
+.contact-card {
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px);
+}
+
+.contact-card input, .contact-card textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border 0.2s;
+}
+
+.contact-card input:focus, .contact-card textarea:focus {
+  border: 1px solid #2a9d8f;
+  outline: none;
+}
+
+.contact-card button {
+  background: #264653;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.contact-card button:hover {
+  background: #2a9d8f;
+  transform: scale(1.05);
+}
+
+footer.dashboard-footer {
+  background: #264653;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
